@@ -1,4 +1,6 @@
 db_data*
+nfs_share*
+nas_share*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
