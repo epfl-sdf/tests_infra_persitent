@@ -1,7 +1,7 @@
 #!/bin/bash
 #Petit script pour nettoyer tout le binz
 #ATTENTION, cela purge VRAIMENT tout le binz de Docker !
-#zf190712.1050
+#zf190712.1156
 
 ./list.sh
 read -p "Etes-vous certain de vouloir tout effacer ?"
@@ -13,4 +13,6 @@ docker volume rm $(docker volume ls -q)
 docker network rm $(docker network ls -q)
 
 sudo rm -rf ./db_data
+sudo rm -rf ./nfs_share
+
 

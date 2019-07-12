@@ -1,4 +1,4 @@
-#zf190712.1123
+#zf190712.1156
 
 version: '3.3'
 
@@ -17,5 +17,19 @@ services:
         ports:
             - "3306:3306"
 
-            
 
+    nas:
+        image: itsthenetwork/nfs-server-alpine:latest
+        volumes:
+            - ./nfs_share:/nfsshare
+        restart: always
+        environment:
+            SHARED_DIRECTORY: /nfsshare
+        ports:
+            - "2049:2049"
+        privileged: true
+
+
+
+#docker run -d -p 2049:2049 --name nfs --privileged -v $1:/nfsshare -e SHARED_DIRECTORY=/nfsshare 
+#itsthenetwork/nfs-server-alpine:latest
