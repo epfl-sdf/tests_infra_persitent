@@ -1,11 +1,11 @@
-#zf190712.1049
+#zf190712.1123
 
 version: '3.3'
 
 services:
     db:
 #        image: mysql:5.7
-        image: mysql/mysql-server
+        image: mariadb
         volumes:
             - ./db_data:/var/lib/mysql
         restart: always
