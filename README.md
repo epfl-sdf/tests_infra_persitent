@@ -1,7 +1,5 @@
 # tests_infra_persitent
-Petite infra de test pour avoir un NAS et une DB Mysql (MariaDB) persistants pour des tests Minishift
-
-Le serveur MySQL fonctionne, reste à faire le serveur NAS !
+Petite infra de test pour avoir un NAS et 2 DB Mysql  persistants pour des tests Minishift
 
 ## Installation
 ### MySQL server
@@ -87,3 +85,4 @@ Tout ce que l'on va écrire dans ./nas_share va se retrouver automatiquement dan
 
 
 zf190712.1205
+cp190717.1742
