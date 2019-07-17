@@ -8,8 +8,7 @@
 #docker network create frontend
 
 mkdir db_data
-mkdir nfs_share
-mkdir nas_share
+mkdir nfsshare
 
 #docker-compose up
 docker-compose up -d

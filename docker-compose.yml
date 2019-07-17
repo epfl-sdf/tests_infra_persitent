@@ -1,17 +1,23 @@
 #zf190712.1156
+#cp190717.1632
 
 version: '3.3'
 
+volumes:
+    db:
+        driver: local
+
 services:
     db:
-#        image: mysql:5.7
-        image: mariadb
+        image: mysql:5.7
+#        image: mariadb
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
         volumes:
-            - ./db_data:/var/lib/mysql
+            - ./docker/provision/mysql/init:/docker-entrypoint-initdb.d
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: root!
-            MYSQL_DATABASE: db1
+#            MYSQL_DATABASE: db1
             MYSQL_USER: userdb1
             MYSQL_PASSWORD: userdb1!
         ports:
@@ -21,7 +27,7 @@ services:
     nas:
         image: itsthenetwork/nfs-server-alpine:latest
         volumes:
-            - ./nfs_share:/nfsshare
+            - ./nfsshare:/nfsshare
         restart: always
         environment:
             SHARED_DIRECTORY: /nfsshare
