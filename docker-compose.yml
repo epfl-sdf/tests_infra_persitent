@@ -1,5 +1,8 @@
-#zf190718.0921
+#zf190718.1024
 #cp190717.1632
+
+#source: https://stackoverflow.com/questions/39204142/docker-compose-with-multiple-databases
+
 
 version: '3.3'
 
