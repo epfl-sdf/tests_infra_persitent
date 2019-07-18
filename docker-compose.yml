@@ -1,4 +1,4 @@
-#zf190718.0857
+#zf190718.0921
 #cp190717.1632
 
 version: '3.3'
@@ -27,7 +27,7 @@ services:
     nas:
         image: itsthenetwork/nfs-server-alpine:latest
         volumes:
-            - ./nfsshare:/nfsshare
+            - ./nfs_share:/nfsshare
         restart: always
         environment:
             SHARED_DIRECTORY: /nfsshare
