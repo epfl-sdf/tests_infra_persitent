@@ -1,5 +1,5 @@
 # tests_infra_persitent
-Petite infra de test pour avoir un NAS et 2 DB Mysql  persistants pour des tests Minishift
+Petite infra de test pour avoir un NAS et 3 DB Mysql  persistants pour des tests Minishift (1x OpenProject, 2x WordPress)
 
 ## Installation
 ### MySQL server
@@ -54,7 +54,10 @@ Simplement faire:
 mysql -u root -p -h 127.0.0.1
 ```
 
-password: root!
+password:
+```
+root!
+```
 
 puis:
 
@@ -84,5 +87,5 @@ Tout ce que l'on va écrire dans ./nas_share va se retrouver automatiquement dan
 
 
 
-zf190712.1205
+zf190718.0904
 cp190717.1742

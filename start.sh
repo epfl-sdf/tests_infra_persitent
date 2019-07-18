@@ -1,6 +1,6 @@
 #!/bin/bash
 #Petit script pour démarrer tout le binz
-#zf190712.1229
+#zf190718.0859
 
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
@@ -8,7 +8,10 @@
 #docker network create frontend
 
 mkdir db_data
-mkdir nfsshare
+mkdir nfs_share/op
+mkdir nfs_share/wp/wp1
+mkdir nfs_share/wp/wp2
+mkdir nas_share
 
 #docker-compose up
 docker-compose up -d

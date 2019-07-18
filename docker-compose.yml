@@ -1,4 +1,4 @@
-#zf190712.1156
+#zf190718.0857
 #cp190717.1632
 
 version: '3.3'
@@ -18,8 +18,8 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: root!
 #            MYSQL_DATABASE: db1
-            MYSQL_USER: userdb1
-            MYSQL_PASSWORD: userdb1!
+#            MYSQL_USER: userdb1
+#            MYSQL_PASSWORD: userdb1!
         ports:
             - "3306:3306"
 
@@ -35,7 +35,3 @@ services:
             - "2049:2049"
         privileged: true
 
-
-
-#docker run -d -p 2049:2049 --name nfs --privileged -v $1:/nfsshare -e SHARED_DIRECTORY=/nfsshare 
-#itsthenetwork/nfs-server-alpine:latest
