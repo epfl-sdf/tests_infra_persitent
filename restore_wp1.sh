@@ -3,13 +3,13 @@
 #zf190718.1512
 
 #restore les fichiers
-rm -R ./nfs_share/wp/wp1/*
-rm ./nfs_share/wp/wp1/.htaccess
+sudo rm -R ./nfs_share/wp/wp1/*
+sudo rm ./nfs_share/wp/wp1/.htaccess
 cd ./nfs_share/wp/wp1
-unzip /keybase/team/epfl_wwp_blue/ec/xfer/backupwp/2019-07-18_12-59-59_ZWKQ3NGL01.zip
+sudo unzip /keybase/team/epfl_wwp_blue/ec/xfer/backupwp/2019-07-18_12-59-59_ZWKQ3NGL01.zip
 
-chown -R www-data.www-data *
-chown  www-data.www-data .htaccess
+sudo chown -R www-data.www-data *
+sudo chown  www-data.www-data .htaccess
 
 
 #restaure la db
