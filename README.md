@@ -84,7 +84,7 @@ sudo mount 127.0.0.1:/ ./nas_share
 
 Tout ce que l'on va écrire dans ./nas_share va se retrouver automatiquement dans ./nfs_share !
 
-
+ATTENTION : on ne peut pas scale up le container nas à plus que 1 à cause du champ container_name introduit afin de faciliter la commande `docker exec ...` dans wp-ops.
 
 
 zf190718.0904

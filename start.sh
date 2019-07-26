@@ -11,7 +11,7 @@
 mkdir -p nfs_share/op
 #mkdir -p nfs_share/wp/wp1
 #mkdir -p nfs_share/wp/wp2
-#mkdir -p nas_share
+mkdir -p nas_share
 
 #sudo chown -R 33.33 nfs_share/wp
 
