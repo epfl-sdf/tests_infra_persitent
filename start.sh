@@ -7,13 +7,13 @@
 
 #docker network create frontend
 
-mkdir -p db_data
+#mkdir -p db_data
 mkdir -p nfs_share/op
-mkdir -p nfs_share/wp/wp1
-mkdir -p nfs_share/wp/wp2
-mkdir -p nas_share
+#mkdir -p nfs_share/wp/wp1
+#mkdir -p nfs_share/wp/wp2
+#mkdir -p nas_share
 
-sudo chown -R 33.33 nfs_share/wp
+#sudo chown -R 33.33 nfs_share/wp
 
 #docker-compose up
 docker-compose up -d

@@ -37,4 +37,5 @@ services:
         ports:
             - "2049:2049"
         privileged: true
-
+#Necessary if we want to use this nas with wp-ops
+        container_name: nas
