@@ -15,7 +15,7 @@ Si on veut tester le serveur MySQL sur la machine du host du container Docker il
 
 ```
 sudo apt update
-sudo install -y sql-client
+sudo apt install -y sql-client
 ```
 
 ### NAS server
@@ -87,5 +87,5 @@ Tout ce que l'on va écrire dans ./nas_share va se retrouver automatiquement dan
 
 
 
-zf190718.0904
+zf190730.1024
 cp190717.1742
