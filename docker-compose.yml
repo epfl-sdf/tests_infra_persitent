@@ -1,4 +1,4 @@
-#zf190718.1024
+#zf190730.1446
 #cp190717.1632
 
 #source: https://stackoverflow.com/questions/39204142/docker-compose-with-multiple-databases
@@ -13,6 +13,7 @@ volumes:
 services:
     db:
         image: mysql:5.7
+        container_name: mysql
 #        image: mariadb
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
         volumes:
@@ -29,6 +30,7 @@ services:
 
     nas:
         image: itsthenetwork/nfs-server-alpine:latest
+        container_name: nas
         volumes:
             - ./nfs_share:/nfsshare
         restart: always
@@ -37,4 +39,3 @@ services:
         ports:
             - "2049:2049"
         privileged: true
-
