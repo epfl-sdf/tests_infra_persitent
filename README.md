@@ -15,7 +15,7 @@ Si on veut tester le serveur MySQL sur la machine du host du container Docker il
 
 ```
 sudo apt update
-sudo apt install -y sql-client
+sudo apt install -y mysql-client
 ```
 
 ### NAS server
